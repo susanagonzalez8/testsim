@@ -8,7 +8,7 @@ sampleid=$1
 
 echo "Running FastQC..."
 mkdir -p out/fastqc
-fastqc -o out/fastqc data/${sampleid}*.fastq.gz
+fastqc -o out/fastqc data/${sampleid}_?.fastq.gz
 echo
 
 echo "Running cutadapt..."
